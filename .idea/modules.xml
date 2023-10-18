@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/jsp-model2-project.iml" filepath="$PROJECT_DIR$/jsp-model2-project.iml" />
-      <module fileurl="file://$PROJECT_DIR$/servlet1/servlet1.iml" filepath="$PROJECT_DIR$/servlet1/servlet1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servlet-EL/servlet-EL.iml" filepath="$PROJECT_DIR$/servlet-EL/servlet-EL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servlet-basic/servlet-basic.iml" filepath="$PROJECT_DIR$/servlet-basic/servlet-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servlet-jstl/servlet-jstl.iml" filepath="$PROJECT_DIR$/servlet-jstl/servlet-jstl.iml" />
     </modules>
   </component>
 </project>

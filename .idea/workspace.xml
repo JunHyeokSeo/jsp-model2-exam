@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="servlet1:war exploded" />
+      <artifact name="servlet-EL:war exploded" />
+      <artifact name="servlet-EL:war exploded" />
+      <artifact name="servlet-basic:war exploded" />
+      <artifact name="servlet-jstl:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,40 +13,121 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e3ef5c7-5b7a-4913-b10d-847dc2c57add" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/servlet1_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsp-model2-project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/servlet1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/src/send/ex1/HelloWorld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/src/send/ex2/Method.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/src/send/ex3/QueryDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/src/send/ex3/QueryDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/src/send/ex3/QueryString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/src/send/ex4/multiPara.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/src/send/ex5/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/src/send/ex6/DispatcherServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/src/send/ex6/RedirectServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/web/SQL/totoro.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/web/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/web/servlet/ex1/HelloWorld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/web/servlet/ex2/Method.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/web/servlet/ex3/QueryString.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/web/servlet/ex3/query테이블.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/web/servlet/ex4/multiPara.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/web/servlet/ex5/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/web/servlet/ex5/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/web/servlet/ex5/loginSuccess.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/web/servlet/ex5/menu.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/web/servlet/ex6/dispatcher.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet1/web/servlet/ex6/redirect.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Servlet_jstl_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/servlet_EL_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/servlet_basic_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/servlet_jstl_war_exploded2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-EL/servlet-EL.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-EL/src/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-EL/src/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-EL/web/el/ex1/el_ex1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-EL/web/el/ex1/el_ex2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-EL/web/el/ex1/el_ex3.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-EL/web/el/ex1/el_ex4.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-EL/web/el/ex2/el_ex5.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-EL/web/el/ex3/productList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-EL/web/el/ex3/productSel.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-EL/web/el/ex4/studentForm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-EL/web/el/ex4/studentList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-EL/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-basic/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-basic/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/servlet-jstl.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/core/ex1/setTag.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/core/ex2/if/ifTag.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/core/ex2/if/ifTagForm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/core/ex3/choose/ifTagForm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/core/ex4/jstl_core_ex1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/core/ex5/forEach/forEach01.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/core/ex5/forEach/forEach02.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/core/ex5/forEach/forEach03.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/core/ex5/forEach/forEach04.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/core/ex5/forEach/forEach05.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/core/ex6/forTokens/forTokensTag.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/core/ex7/jstl_core_ex2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/fmt/dateformat.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/fmt/numberformat.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/fmt/timezone_tag.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/fn/function01.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/fn/function02.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/sql/jstl_sql_ex.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/sql/test테이블 구조.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/web/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/core/ex1/setTag.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/core/ex2/if/ifTag.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/core/ex2/if/ifTagForm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/core/ex3/choose/ifTagForm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/core/ex4/jstl_core_ex1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/core/ex5/forEach/forEach01.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/core/ex5/forEach/forEach02.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/core/ex5/forEach/forEach03.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/core/ex5/forEach/forEach04.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/core/ex5/forEach/forEach05.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/core/ex6/forTokens/forTokensTag.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/core/ex7/jstl_core_ex2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/fmt/dateformat.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/fmt/numberformat.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/fmt/timezone_tag.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/fn/function01.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/fn/function02.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/sql/jstl_sql_ex.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/sql/test테이블 구조.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/servlet1_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/58d83e94-d850-4525-a1fe-d1974f5f0c08.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/58d83e94-d850-4525-a1fe-d1974f5f0c08.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3f73cca-f696-4add-8c8f-ed0b868fa838.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c3f73cca-f696-4add-8c8f-ed0b868fa838.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsp-model2-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jsp-model2-project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet1_war_exploded/SQL/totoro.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet1_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet1_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet1_war_exploded/servlet/ex1/HelloWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet1_war_exploded/servlet/ex2/Method.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet1_war_exploded/servlet/ex3/QueryString.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet1_war_exploded/servlet/ex3/query테이블.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet1_war_exploded/servlet/ex4/multiPara.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet1_war_exploded/servlet/ex5/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet1_war_exploded/servlet/ex5/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet1_war_exploded/servlet/ex5/loginSuccess.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet1_war_exploded/servlet/ex5/menu.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet1_war_exploded/servlet/ex6/dispatcher.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet1_war_exploded/servlet/ex6/redirect.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-EL/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/servlet1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/servlet-basic.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/src/send/ex1/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/src/send/ex1/HelloWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/src/send/ex2/Method.java" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/src/send/ex2/Method.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/src/send/ex3/QueryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/src/send/ex3/QueryDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/src/send/ex3/QueryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/src/send/ex3/QueryDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/src/send/ex3/QueryString.java" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/src/send/ex3/QueryString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/src/send/ex4/multiPara.java" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/src/send/ex4/multiPara.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/src/send/ex5/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/src/send/ex5/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/src/send/ex6/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/src/send/ex6/DispatcherServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/src/send/ex6/RedirectServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/src/send/ex6/RedirectServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/web/SQL/totoro.sql" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/web/SQL/totoro.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-EL/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/web/servlet/ex1/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/web/servlet/ex1/HelloWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/web/servlet/ex2/Method.html" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/web/servlet/ex2/Method.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/web/servlet/ex3/QueryString.html" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/web/servlet/ex3/QueryString.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/web/servlet/ex3/query테이블.txt" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/web/servlet/ex3/query테이블.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/web/servlet/ex4/multiPara.html" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/web/servlet/ex4/multiPara.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/web/servlet/ex5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/web/servlet/ex5/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/web/servlet/ex5/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/web/servlet/ex5/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/web/servlet/ex5/loginSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/web/servlet/ex5/loginSuccess.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/web/servlet/ex5/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/web/servlet/ex5/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/web/servlet/ex6/dispatcher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/web/servlet/ex6/dispatcher.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet1/web/servlet/ex6/redirect.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/web/servlet/ex6/redirect.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +138,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Servlet" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -83,7 +168,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/jun/Documents/Dev_project/web/jsp-model2-project/servlet1/src/send/ex6",
+    "last_opened_file_path": "/Users/jun/Documents/Dev_project/web/jsp-model2-project/servlet-jstl/web",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -91,6 +176,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -104,13 +190,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/servlet1/src/send/ex6" />
-      <recent name="$PROJECT_DIR$/servlet1/src/send/ex04" />
-      <recent name="$PROJECT_DIR$/servlet1/src/send/ex3" />
-      <recent name="$PROJECT_DIR$/servlet1/web/servlet/ex2" />
-      <recent name="$PROJECT_DIR$/servlet1/web/servlet/ex1" />
+      <recent name="$PROJECT_DIR$/servlet-jstl/web" />
+      <recent name="$PROJECT_DIR$/servlet-jstl/web/WEB-INF/lib" />
+      <recent name="$PROJECT_DIR$/Servlet-jstl/web/WEB-INF/lib" />
+      <recent name="$PROJECT_DIR$/servlet-EL/web" />
+      <recent name="$PROJECT_DIR$/servlet-EL/web/WEB-INF/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/servlet-EL/src/model" />
       <recent name="$PROJECT_DIR$/servlet1/src/send/ex5" />
     </key>
   </component>
@@ -119,9 +206,19 @@
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="servlet1:war exploded">
+        <artifact name="servlet-basic:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/" />
+            <option name="CONTEXT_PATH" value="/servlet_basic_war_exploded" />
+          </settings>
+        </artifact>
+        <artifact name="servlet-EL:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/servlet_EL_war_exploded" />
+          </settings>
+        </artifact>
+        <artifact name="servlet-jstl:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/servlet_jstl_war_exploded" />
           </settings>
         </artifact>
       </deployment>
@@ -200,7 +297,10 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="servlet1:war exploded" />
+          <artifact name="servlet-EL:war exploded" />
+          <artifact name="servlet-basic:war exploded" />
+          <artifact name="servlet-EL:war exploded" />
+          <artifact name="servlet-jstl:war exploded" />
         </option>
       </method>
     </configuration>
@@ -214,6 +314,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697510279709</updated>
       <workItem from="1697510280839" duration="10535000" />
+      <workItem from="1697590172280" duration="12736000" />
     </task>
     <servers />
   </component>
@@ -222,5 +323,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
