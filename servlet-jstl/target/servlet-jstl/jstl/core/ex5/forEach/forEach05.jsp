@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix ="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="java.util.List"%>
 <%@ page import="java.util.ArrayList"%>
@@ -28,6 +27,12 @@
 	request.setAttribute("slist", list);		// 공유 설정
 %>
 
+<%--
+
+[향상된 for문 사용 시, list 등 자료구조를 직접 items에 넣을 수 없다.]
+변수에 넣거나, JSP 영역에 공유하여 사용해야한다.
+--%>
+
 <!-- 방법1 -->
 <c:set var="s1" value="<%=list%>"/>
 <c:forEach var="s2" items="${s1}">
@@ -35,7 +40,15 @@
 </c:forEach>
 <br><br>
 
-<!-- 방법2 -->
+<!-- 방법2(request 공유) : 자주 사용-->
+<%--
+<c:forEach var="s" items="${requestScope(slist)}">
+<c:forEach var="s" items="${slist}">
+
+slist라는 'name'값을 가지고 공유하고 있는 값이 모든 JSP 영역에 하나밖에 없을 때,
+requestScope를 생략하여 사용할 수 있다.
+단, slist가 request에도 있고 session에도 있다면 간략화된 형태는 사용할 수 없다.
+--%>
 <c:forEach var="s" items="${slist}">
     ${s} <br>
 </c:forEach>

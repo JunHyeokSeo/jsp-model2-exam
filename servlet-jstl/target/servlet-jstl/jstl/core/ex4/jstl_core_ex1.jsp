@@ -9,6 +9,8 @@
 
 <c:set var="test" value="Hello JSTL!"/>
 <h3>&lt;c:set&gt; 사용 후 : <c:out value="${test}"/></h3>
+<h3>&lt;c:set&gt; 사용 후 : ${test}</h3>
+
 <c:remove var="test"/>
 <h3>&lt;c:remove&gt; 사용 후 : <c:out value="${test}"/></h3>
 
@@ -18,10 +20,10 @@
 <h3>&lt;c:catch&gt;로 잡아낸 오류 : <c:out value="${err}"/></h3>
 
 <c:if test="${5<10}">
-<h3>5는 10보다 작다.</h3>
+	<h3>5는 10보다 작다.</h3>
 </c:if>
 <c:if test="${6+3==9}">
-<h3>6 + 3 은 9이다.</h3>
+	<h3>6 + 3 은 9이다.</h3>
 </c:if>
 
 <c:choose>

@@ -27,6 +27,12 @@
 	request.setAttribute("slist", list);		// 공유 설정
 %>
 
+<%--
+
+[향상된 for문 사용 시, list 등 자료구조를 직접 items에 넣을 수 없다.]
+변수에 넣거나, JSP 영역에 공유하여 사용해야한다.
+--%>
+
 <!-- 방법1 -->
 <c:set var="s1" value="<%=list%>"/>
 <c:forEach var="s2" items="${s1}">

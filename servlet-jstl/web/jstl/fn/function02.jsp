@@ -23,7 +23,7 @@
     </c:forEach>
     
     <!-- join() : 배열 형태의 문자열을 구분자('-')로 연결하여 반환 -->
-    <p><c:out value="${fn:join(texts,'-') }"/>
+    <p><c:out value="${fn:join(texts,'-') }"/>                                  <!--Hello-Java-Server-Pages!-->
     
 </body>
 </html>

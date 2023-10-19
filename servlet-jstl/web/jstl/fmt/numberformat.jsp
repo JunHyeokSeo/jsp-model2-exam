@@ -10,16 +10,16 @@
 
 <!-- type="number" : 3자리씩 컴마로 구분해서 출력 -->
 <fmt:formatNumber value="${price}" type="number" var="numberType" />
-숫자: ${numberType} <br>
+숫자: ${numberType} <br>                                                                    <!--10,000-->
 
 <!-- type="currency" : 통화기호 출력 -->
-통화: <fmt:formatNumber value="${price}" type="currency" currencySymbol="$" /><br>
+통화: <fmt:formatNumber value="${price}" type="currency" currencySymbol="$" /><br>          <!--$10,000.00-->
 
 <!-- type="percent" : percent(%)기호 출력 -->
-퍼센트: <fmt:formatNumber value="${price}" type="percent" groupingUsed="true" /> <br>
-퍼센트: <fmt:formatNumber value="${price}" type="percent" groupingUsed="false" /> <br>
+퍼센트: <fmt:formatNumber value="${price}" type="percent" groupingUsed="true" /> <br>       <!--1,000,000%-->
+퍼센트: <fmt:formatNumber value="${price}" type="percent" groupingUsed="false" /> <br>      <!--1000000%-->
 
-패턴: <fmt:formatNumber value="${price}" pattern="00000000.00"/>
+패턴: <fmt:formatNumber value="${price}" pattern="00000000.00"/>                            <!--00010000.00-->
 
 </body>
 </html>

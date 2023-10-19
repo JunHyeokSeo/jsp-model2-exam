@@ -13,10 +13,10 @@
 <h3>문자열 검색</h3>
 
 <!-- contains() : 검색 대상 문자열의 포함 여부를 확인 -->
-Hello Java Server Pages! => ${fn:contains("Hello Java Server Pages!","java")}<br><br>
+Hello Java Server Pages! => ${fn:contains("Hello Java Server Pages!","java")}<br><br>       <!--false-->
 
 <!-- containsIgnoreCase() : 대,소문자와 상관없이 검색 대상 문자열 포함 여부 확인 -->
-Hello Java Server Pages! => ${fn:containsIgnoreCase("Hello Java Server Pages!","java")}
+Hello Java Server Pages! => ${fn:containsIgnoreCase("Hello Java Server Pages!","java")}     <!--true-->
 
 </body>
 </html>
