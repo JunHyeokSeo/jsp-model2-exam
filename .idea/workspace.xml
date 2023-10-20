@@ -4,73 +4,30 @@
     <artifacts-to-build>
       <artifact name="model2:war exploded" />
       <artifact name="servlet-EL:war exploded" />
-      <artifact name="servlet-EL:war exploded" />
-      <artifact name="servlet-basic:war exploded" />
-      <artifact name="servlet-jstl:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e3ef5c7-5b7a-4913-b10d-847dc2c57add" name="Changes" comment="feat : servlet 기본 문법 및 EL &amp; JSTL 학습">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/model2_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/model2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/src/member/controller/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/src/member/dao/MemberDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/src/member/model/MemberDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/src/member/service/Action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/src/member/service/ActionForward.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/src/member/service/MemberInsert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/META-INF/context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/WEB-INF/lib/cos.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/WEB-INF/lib/ojdbc11.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/board/board_write.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/board/context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/board/dbcpAPITest.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/board/file_down.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/board/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/board/모델2로 구현한 게시판.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/member/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/member/loginform.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/member/member.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/member/memberform.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/sql/totoro.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/core/ex3/choose/chooseTag.jsp" afterDir="false" />
+    <list default="true" id="7e3ef5c7-5b7a-4913-b10d-847dc2c57add" name="Changes" comment="feat : Model2 회원가입 예제, Controller 구현">
+      <change afterPath="$PROJECT_DIR$/model2/src/member/service/IdCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/src/member/service/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/web/member/logout.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/web/member/main.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/web/member/result.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3f73cca-f696-4add-8c8f-ed0b868fa838.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c3f73cca-f696-4add-8c8f-ed0b868fa838.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/servlet1/send/ex1/HelloWorld.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/servlet1/send/ex2/Method.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/servlet1/send/ex3/QueryDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/servlet1/send/ex3/QueryDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/servlet1/send/ex3/QueryString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/servlet1/send/ex4/multiPara.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/servlet1/send/ex5/LoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/servlet1/send/ex6/DispatcherServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/servlet1/send/ex6/RedirectServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet-basic/servlet-basic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-basic/servlet-basic.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet-jstl/servlet-jstl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-jstl/servlet-jstl.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/core/ex1/setTag.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/core/ex1/setTag.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/core/ex2/if/ifTag.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/core/ex2/if/ifTag.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/core/ex4/jstl_core_ex1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/core/ex4/jstl_core_ex1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/core/ex5/forEach/forEach05.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/core/ex5/forEach/forEach05.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/fmt/dateformat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/fmt/dateformat.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/fmt/numberformat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/fmt/numberformat.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/fmt/timezone_tag.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/fmt/timezone_tag.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/fn/function01.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/fn/function01.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/fn/function02.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-jstl/target/servlet-jstl/jstl/fn/function02.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet-jstl/web/jstl/core/ex5/forEach/forEach05.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/core/ex5/forEach/forEach05.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet-jstl/web/jstl/fmt/dateformat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/fmt/dateformat.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet-jstl/web/jstl/fmt/numberformat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/fmt/numberformat.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet-jstl/web/jstl/fmt/timezone_tag.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/fmt/timezone_tag.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet-jstl/web/jstl/fn/function01.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/fn/function01.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet-jstl/web/jstl/fn/function02.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/servlet-jstl/web/jstl/fn/function02.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/src/member/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/model2/src/member/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/src/member/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/model2/src/member/dao/MemberDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/src/member/model/MemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/model2/src/member/model/MemberDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/src/member/service/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/model2/src/member/service/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/src/member/service/ActionForward.java" beforeDir="false" afterPath="$PROJECT_DIR$/model2/src/member/service/ActionForward.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/src/member/service/MemberInsert.java" beforeDir="false" afterPath="$PROJECT_DIR$/model2/src/member/service/MemberInsert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/web/member/loginform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/member/loginform.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/web/member/member.js" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/member/member.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/web/member/memberform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/member/memberform.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,9 +38,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Servlet" />
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -113,12 +70,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/jun/Documents/Dev_project/web/jsp-model2-project/model2/src/member",
+    "last_opened_file_path": "/Users/jun/Documents/Dev_project/web/jsp-model2-project/model2/web",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.keymap",
@@ -135,11 +92,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/model2/src/member" />
-      <recent name="$PROJECT_DIR$/model2/src/member/service" />
-      <recent name="$PROJECT_DIR$/model2/src" />
-      <recent name="$PROJECT_DIR$/model2/web/WEB-INF/lib" />
       <recent name="$PROJECT_DIR$/model2/web" />
+      <recent name="$PROJECT_DIR$/model2/src/member" />
+      <recent name="$PROJECT_DIR$/model2/src/member/dao" />
+      <recent name="$PROJECT_DIR$/model2/src/member/service" />
+      <recent name="$PROJECT_DIR$/model2/web/member" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/servlet-EL/src/model" />
@@ -148,27 +105,13 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.80" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.80" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8090/model2member/LoginForm.do" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="servlet-basic:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/servlet_basic_war_exploded" />
-          </settings>
-        </artifact>
-        <artifact name="servlet-EL:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/servlet_EL_war_exploded" />
-          </settings>
-        </artifact>
-        <artifact name="servlet-jstl:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/servlet_jstl_war_exploded" />
-          </settings>
-        </artifact>
         <artifact name="model2:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/model2_war_exploded" />
+            <option name="CONTEXT_PATH" value="/model2member" />
           </settings>
         </artifact>
       </deployment>
@@ -248,9 +191,6 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="servlet-EL:war exploded" />
-          <artifact name="servlet-basic:war exploded" />
-          <artifact name="servlet-EL:war exploded" />
-          <artifact name="servlet-jstl:war exploded" />
           <artifact name="model2:war exploded" />
         </option>
       </method>
@@ -267,8 +207,18 @@
       <workItem from="1697510280839" duration="10535000" />
       <workItem from="1697590172280" duration="13055000" />
       <workItem from="1697675376943" duration="6507000" />
-      <workItem from="1697686563297" duration="8788000" />
+      <workItem from="1697686563297" duration="8870000" />
+      <workItem from="1697762281744" duration="20613000" />
     </task>
+    <task id="LOCAL-00001" summary="feat : Model2 회원가입 예제, Controller 구현">
+      <option name="closed" value="true" />
+      <created>1697701980916</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697701980916</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +227,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="feat : servlet 기본 문법 및 EL &amp; JSTL 학습" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : servlet 기본 문법 및 EL &amp; JSTL 학습" />
+    <MESSAGE value="feat : Model2 회원가입 예제, Controller 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : Model2 회원가입 예제, Controller 구현" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

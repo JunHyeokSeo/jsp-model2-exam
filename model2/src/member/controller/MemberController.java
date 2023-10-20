@@ -1,10 +1,7 @@
 package member.controller;
 
-import member.service.Action;
-import member.service.ActionForward;
-import member.service.MemberInsert;
-
 import java.io.IOException;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,62 +9,98 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-//do 확장자로 요청하는 모든 요청을 받는다는 의미
-@WebServlet("*.do")
-public class MemberController extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+import member.service.Action;
+import member.service.ActionForward;
+import member.service.IdCheck;
+import member.service.Login;
+import member.service.MemberInsert;
 
-	//doGet, doPost 메소드에서 공통적인 작업을 처리하는 메소드
+@WebServlet("*.do")	// do 확장자로 요청하는 모든 요청을 받는다는 의미
+public class MemberController extends HttpServlet {
+	
+	// doGet(), doPost() 메소드에서 공통적인 작업을 처리하는 메소드
 	protected void doProcess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		String requestURI = request.getRequestURI();
 		String contextPath = request.getContextPath();
 		String command = requestURI.substring(contextPath.length());
-
-
-		//요청에 따라 호출할 Service 파일명이 달라짐.
-		//따라서 아래 코드를 통해 요청 이름을 파악함.
-
-		//요청 URI : /model2_war_exploded/MemberInsert.do
-		System.out.println("requestURI : " + requestURI);
-		//현재 프로젝트명 : /model2_war_exploded
-		System.out.println("contextPath : " + contextPath);
-		//요청 이름 : /MemberInsert.do
-		System.out.println("command : " + command);
-
+	
+		System.out.println("requestURI:"+ requestURI);
+		System.out.println("contextPath:"+ contextPath);
+		System.out.println("command:"+ command);
+		
 		Action action = null;
 		ActionForward forward = null;
-
-		//회원가입
-		if (command.equals("/MemberInsert.do")) {
-			action = new MemberInsert();
+		
+		// 회원가입
+		if(command.equals("/MemberInsert.do")) {
 			try {
+				action = new MemberInsert();
 				forward = action.execute(request, response);
-			} catch (Exception e) {
+			}catch(Exception e) {
 				e.printStackTrace();
 			}
-		}
-
-		//포워딩 처리
-		if (forward != null) {
-			if (forward.isRedirect()) { //redirect 방식으로 포워딩
-				response.sendRedirect(forward.getPath());
-			} else {                    //dispatcher 방식으로 포워딩
-				RequestDispatcher dispatcher = request.getRequestDispatcher(forward.getPath());
-				dispatcher.forward(request, response);
+			
+		//ID중복 검사(ajax)	
+		}else if(command.equals("/IdCheck.do")) {
+			try {
+				action = new IdCheck();
+				forward = action.execute(request, response);
+			}catch(Exception e) {
+				e.printStackTrace();
 			}
+			
+		// 회원가입 폼	
+		}else if(command.equals("/MemberForm.do")) {
+			forward = new ActionForward();
+			forward.setRedirect(false);
+			forward.setPath("./member/memberform.jsp");
+		
+		// 로그인 폼
+		}else if(command.equals("/LoginForm.do")) {	
+			forward = new ActionForward();
+			forward.setRedirect(false);
+			forward.setPath("./member/loginform.jsp");
+			
+		// 로그인(회원인증)	
+		}else if(command.equals("/Login.do")) {
+			try {
+				action = new Login();
+				forward = action.execute(request, response);
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+			
+		// 로그아웃			
+		}else if(command.equals("/Logout.do")) {
+			forward = new ActionForward();
+			forward.setRedirect(false);
+			forward.setPath("./member/logout.jsp");
 		}
-	}
 
+		// 포워딩 처리
+		if(forward != null) {
+			if(forward.isRedirect()) {	// redirect방식으로 포워딩
+				response.sendRedirect(forward.getPath());
+			}else {						// dispatcher방식으로 포워딩
+				RequestDispatcher dispatcher =
+				   request.getRequestDispatcher(forward.getPath());
+				dispatcher.forward(request, response);				
+			}			
+		}	
+		
+	} // doProcess() end	
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("get");
-
-		doProcess(request, response);
+		
+		doProcess(request, response);	// doProcess()메소드 호출	
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("post");
 
-		doProcess(request, response);
+		doProcess(request, response);	// doProcess()메소드 호출	
 	}
 
 }
