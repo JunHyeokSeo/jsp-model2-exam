@@ -83,8 +83,7 @@ public class MemberController extends HttpServlet {
 			if(forward.isRedirect()) {	// redirect방식으로 포워딩
 				response.sendRedirect(forward.getPath());
 			}else {						// dispatcher방식으로 포워딩
-				RequestDispatcher dispatcher =
-				   request.getRequestDispatcher(forward.getPath());
+				RequestDispatcher dispatcher = request.getRequestDispatcher(forward.getPath());
 				dispatcher.forward(request, response);				
 			}			
 		}	

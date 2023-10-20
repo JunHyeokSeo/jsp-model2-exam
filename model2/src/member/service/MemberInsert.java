@@ -12,7 +12,6 @@ public class MemberInsert implements Action{
 
 	@Override
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		// TODO Auto-generated method stub
 		System.out.println("MemberInsert");
 		
 		request.setCharacterEncoding("utf-8");
@@ -54,13 +53,7 @@ public class MemberInsert implements Action{
 			out.println("location.href='./member/result.jsp'");
 			out.println("</script>");
 			out.close();
-		}		
-		
-		ActionForward forward = new ActionForward();
-//		forward.setRedirect(false);  // dispatcher 방식으로 포워딩
-//		forward.setPath("./member/loginform.jsp"); //포워딩 파일명
-//		
-//		return forward;
+		}
 		
 		return null;
 	}

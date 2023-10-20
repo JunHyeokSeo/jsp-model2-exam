@@ -10,24 +10,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e3ef5c7-5b7a-4913-b10d-847dc2c57add" name="Changes" comment="feat : Model2 회원가입 예제, Controller 구현">
-      <change afterPath="$PROJECT_DIR$/model2/src/member/service/IdCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/src/member/service/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/member/logout.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/member/main.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/member/result.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3f73cca-f696-4add-8c8f-ed0b868fa838.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c3f73cca-f696-4add-8c8f-ed0b868fa838.xml" afterDir="false" />
+    <list default="true" id="7e3ef5c7-5b7a-4913-b10d-847dc2c57add" name="Changes" comment="feat : Model2 회원가입 예제, Controller 포워딩 부분 구현">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model2/src/member/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/model2/src/member/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model2/src/member/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/model2/src/member/dao/MemberDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model2/src/member/model/MemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/model2/src/member/model/MemberDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model2/src/member/service/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/model2/src/member/service/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model2/src/member/service/ActionForward.java" beforeDir="false" afterPath="$PROJECT_DIR$/model2/src/member/service/ActionForward.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model2/src/member/service/MemberInsert.java" beforeDir="false" afterPath="$PROJECT_DIR$/model2/src/member/service/MemberInsert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model2/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model2/web/member/loginform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/member/loginform.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model2/web/member/member.js" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/member/member.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model2/web/member/memberform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/member/memberform.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/web/member/logout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/member/logout.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/web/member/result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/member/result.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +196,7 @@
       <workItem from="1697590172280" duration="13055000" />
       <workItem from="1697675376943" duration="6507000" />
       <workItem from="1697686563297" duration="8870000" />
-      <workItem from="1697762281744" duration="20613000" />
+      <workItem from="1697762281744" duration="22067000" />
     </task>
     <task id="LOCAL-00001" summary="feat : Model2 회원가입 예제, Controller 구현">
       <option name="closed" value="true" />
@@ -218,17 +206,37 @@
       <option name="project" value="LOCAL" />
       <updated>1697701980916</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat : Model2 회원가입 예제, Controller 포워딩 부분 구현">
+      <option name="closed" value="true" />
+      <created>1697790037390</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697790037390</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="feat : servlet 기본 문법 및 EL &amp; JSTL 학습" />
     <MESSAGE value="feat : Model2 회원가입 예제, Controller 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : Model2 회원가입 예제, Controller 구현" />
+    <MESSAGE value="feat : Model2 회원가입 예제, Controller 포워딩 부분 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : Model2 회원가입 예제, Controller 포워딩 부분 구현" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
