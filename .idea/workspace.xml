@@ -11,11 +11,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e3ef5c7-5b7a-4913-b10d-847dc2c57add" name="Changes" comment="feat : Model2 회원가입 예제, Controller 포워딩 부분 구현">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/src/member/service/Delete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/src/member/service/Update.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/src/member/service/UpdateMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/web/member/deleteform.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/web/member/updateform.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model2/src/member/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/model2/src/member/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model2/src/member/service/MemberInsert.java" beforeDir="false" afterPath="$PROJECT_DIR$/model2/src/member/service/MemberInsert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model2/web/member/logout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/member/logout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model2/web/member/result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/member/result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/src/member/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/model2/src/member/dao/MemberDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/web/member/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/member/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/web/member/member.js" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/member/member.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +33,8 @@
       <list>
         <option value="Servlet" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -58,7 +64,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/jun/Documents/Dev_project/web/jsp-model2-project/model2/web",
+    "last_opened_file_path": "/Users/jun/Documents/Dev_project/web/jsp-model2-project/model2/web/member",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,11 +86,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/model2/web/member" />
+      <recent name="$PROJECT_DIR$/model2/src/member/service" />
       <recent name="$PROJECT_DIR$/model2/web" />
       <recent name="$PROJECT_DIR$/model2/src/member" />
       <recent name="$PROJECT_DIR$/model2/src/member/dao" />
-      <recent name="$PROJECT_DIR$/model2/src/member/service" />
-      <recent name="$PROJECT_DIR$/model2/web/member" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/servlet-EL/src/model" />
@@ -196,7 +202,8 @@
       <workItem from="1697590172280" duration="13055000" />
       <workItem from="1697675376943" duration="6507000" />
       <workItem from="1697686563297" duration="8870000" />
-      <workItem from="1697762281744" duration="22067000" />
+      <workItem from="1697762281744" duration="22199000" />
+      <workItem from="1698021696079" duration="15049000" />
     </task>
     <task id="LOCAL-00001" summary="feat : Model2 회원가입 예제, Controller 구현">
       <option name="closed" value="true" />
@@ -214,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697790037390</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat : Model2 회원가입 예제, Controller 포워딩 부분 구현">
+      <option name="closed" value="true" />
+      <created>1697791368643</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697791368643</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

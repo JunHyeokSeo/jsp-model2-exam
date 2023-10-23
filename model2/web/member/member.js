@@ -12,8 +12,6 @@ $(document).ready(function () {
 
             $.ajax({
                 type: "post", url: "/model2member/IdCheck.do", data: {"id": id}, success: function (data) {
-                    alert(data);
-
                     if (data == 1) {	// 중복 ID
                         $("#myid").text("중복 ID입니다.");
                         $("#id").val("").focus();
