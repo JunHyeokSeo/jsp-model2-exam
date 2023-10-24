@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import member.service.*;
 
-@WebServlet("*.do")	// do 확장자로 요청하는 모든 요청을 받는다는 의미
+//@WebServlet("*.do")	// do 확장자로 요청하는 모든 요청을 받는다는 의미
 public class MemberController extends HttpServlet {
 
 	// doGet(), doPost() 메소드에서 공통적인 작업을 처리하는 메소드

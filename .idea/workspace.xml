@@ -10,18 +10,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e3ef5c7-5b7a-4913-b10d-847dc2c57add" name="Changes" comment="feat : Model2 회원가입 예제, Controller 포워딩 부분 구현">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/src/member/service/Delete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/src/member/service/Update.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/src/member/service/UpdateMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/member/deleteform.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/member/updateform.jsp" afterDir="false" />
+    <list default="true" id="7e3ef5c7-5b7a-4913-b10d-847dc2c57add" name="Changes" comment="feat : Model2 회원가입 기능 구현 완료">
+      <change afterPath="$PROJECT_DIR$/model2/src/board/controller/BoardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/src/board/dao/BoardDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/src/board/model/BoardBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/src/board/service/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/src/board/service/ActionForward.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/src/board/service/BoardAddAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/src/board/service/BoardDetailAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/src/board/service/BoardListAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/web/board/board_list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3f73cca-f696-4add-8c8f-ed0b868fa838.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c3f73cca-f696-4add-8c8f-ed0b868fa838.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model2/src/member/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/model2/src/member/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model2/src/member/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/model2/src/member/dao/MemberDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model2/web/member/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/member/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model2/web/member/member.js" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/member/member.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/web/board/board_write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/board/board_write.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/web/board/dbcpAPITest.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/web/board/모델2로 구현한 게시판.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/web/sql/totoro.sql" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/sql/totoro.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +70,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/jun/Documents/Dev_project/web/jsp-model2-project/model2/web/member",
+    "last_opened_file_path": "/Users/jun/Documents/Dev_project/web/jsp-model2-project/model2/web/board",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,11 +92,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/model2/web/board" />
+      <recent name="$PROJECT_DIR$/model2/src/board/service" />
+      <recent name="$PROJECT_DIR$/model2/src/board" />
       <recent name="$PROJECT_DIR$/model2/web/member" />
       <recent name="$PROJECT_DIR$/model2/src/member/service" />
-      <recent name="$PROJECT_DIR$/model2/web" />
-      <recent name="$PROJECT_DIR$/model2/src/member" />
-      <recent name="$PROJECT_DIR$/model2/src/member/dao" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/servlet-EL/src/model" />
@@ -99,7 +105,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.80" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.80" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8090/model2member/LoginForm.do" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8090/model2member/index.jsp" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -203,7 +209,8 @@
       <workItem from="1697675376943" duration="6507000" />
       <workItem from="1697686563297" duration="8870000" />
       <workItem from="1697762281744" duration="22199000" />
-      <workItem from="1698021696079" duration="15049000" />
+      <workItem from="1698021696079" duration="15943000" />
+      <workItem from="1698113067613" duration="11268000" />
     </task>
     <task id="LOCAL-00001" summary="feat : Model2 회원가입 예제, Controller 구현">
       <option name="closed" value="true" />
@@ -229,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697791368643</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat : Model2 회원가입 기능 구현 완료">
+      <option name="closed" value="true" />
+      <created>1698046603601</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698046603601</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +266,8 @@
     <MESSAGE value="feat : servlet 기본 문법 및 EL &amp; JSTL 학습" />
     <MESSAGE value="feat : Model2 회원가입 예제, Controller 구현" />
     <MESSAGE value="feat : Model2 회원가입 예제, Controller 포워딩 부분 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : Model2 회원가입 예제, Controller 포워딩 부분 구현" />
+    <MESSAGE value="feat : Model2 회원가입 기능 구현 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : Model2 회원가입 기능 구현 완료" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -11,5 +11,8 @@
     <title>$Title$</title>
   </head>
   <body>
+  <script>
+      location.href = "./BoardListAction.do";
+  </script>
   </body>
 </html>

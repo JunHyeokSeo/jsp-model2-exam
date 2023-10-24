@@ -10,8 +10,7 @@
 </head>
 <body>
 
-<form action="<%=request.getContextPath() %>/BoardAddAction.do" method="post" 
-	  enctype="multipart/form-data">
+<form action="<%=request.getContextPath() %>/BoardAddAction.do" method="post" enctype="multipart/form-data">
 <table cellpadding="0" cellspacing="0" align=center border=1>
 	<tr align="center" valign="middle">
 		<td colspan="5">MVC 게시판</td>
