@@ -3,31 +3,33 @@
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="model2:war exploded" />
-      <artifact name="servlet-EL:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e3ef5c7-5b7a-4913-b10d-847dc2c57add" name="Changes" comment="feat : Model2 회원가입 기능 구현 완료">
-      <change afterPath="$PROJECT_DIR$/model2/src/board/controller/BoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/src/board/dao/BoardDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/src/board/model/BoardBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/src/board/service/Action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/src/board/service/ActionForward.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/src/board/service/BoardAddAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/src/board/service/BoardDetailAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/src/board/service/BoardListAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model2/web/board/board_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3f73cca-f696-4add-8c8f-ed0b868fa838.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c3f73cca-f696-4add-8c8f-ed0b868fa838.xml" afterDir="false" />
+    <list default="true" id="7e3ef5c7-5b7a-4913-b10d-847dc2c57add" name="Changes" comment="feat : Model2 게시판 구현 - 게시글 추가, 게시글 목록 출력 및 페이징 기능 추가">
+      <change afterPath="$PROJECT_DIR$/model2/src/board/service/BoardDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/src/board/service/BoardModify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/src/board/service/BoardModifyForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/src/board/service/BoardReply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/src/board/service/BoardReplyForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/web/board/board_delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/web/board/board_modify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/web/board/board_reply.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/web/board/board_view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/web/board/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model2/web/board/update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3f73cca-f696-4add-8c8f-ed0b868fa838.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model2/src/member/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/model2/src/member/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model2/web/board/board_write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/board/board_write.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model2/web/board/dbcpAPITest.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model2/web/board/모델2로 구현한 게시판.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model2/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model2/web/sql/totoro.sql" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/sql/totoro.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/src/board/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/model2/src/board/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/src/board/dao/BoardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/model2/src/board/dao/BoardDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/src/board/service/BoardDetailAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/model2/src/board/service/BoardDetailAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/src/board/service/BoardListAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/model2/src/board/service/BoardListAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/web/board/board_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/board/board_list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/web/board/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/web/board/file_down.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/model2/web/board/file_down.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +101,7 @@
       <recent name="$PROJECT_DIR$/model2/src/member/service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/model2/web/board" />
       <recent name="$PROJECT_DIR$/servlet-EL/src/model" />
       <recent name="$PROJECT_DIR$/servlet1/src/send/ex5" />
     </key>
@@ -210,7 +213,11 @@
       <workItem from="1697686563297" duration="8870000" />
       <workItem from="1697762281744" duration="22199000" />
       <workItem from="1698021696079" duration="15943000" />
-      <workItem from="1698113067613" duration="11268000" />
+      <workItem from="1698113067613" duration="11758000" />
+      <workItem from="1698136687255" duration="8000" />
+      <workItem from="1698136963975" duration="18000" />
+      <workItem from="1698193629609" duration="9000" />
+      <workItem from="1698193655746" duration="10192000" />
     </task>
     <task id="LOCAL-00001" summary="feat : Model2 회원가입 예제, Controller 구현">
       <option name="closed" value="true" />
@@ -244,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698046603601</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat : Model2 게시판 구현 - 게시글 추가, 게시글 목록 출력 및 페이징 기능 추가">
+      <option name="closed" value="true" />
+      <created>1698133682766</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698133682766</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +282,8 @@
     <MESSAGE value="feat : Model2 회원가입 예제, Controller 구현" />
     <MESSAGE value="feat : Model2 회원가입 예제, Controller 포워딩 부분 구현" />
     <MESSAGE value="feat : Model2 회원가입 기능 구현 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : Model2 회원가입 기능 구현 완료" />
+    <MESSAGE value="feat : Model2 게시판 구현 - 게시글 추가, 게시글 목록 출력 및 페이징 기능 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : Model2 게시판 구현 - 게시글 추가, 게시글 목록 출력 및 페이징 기능 추가" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

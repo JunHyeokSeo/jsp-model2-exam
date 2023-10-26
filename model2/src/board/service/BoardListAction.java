@@ -30,8 +30,8 @@ public class BoardListAction implements Action{
 		int endRow = page * limit;
 
 		//게시판 목록 구하기
-		List<BoardBean> boardList = dao.getList(startRow, endRow);
-		System.out.println("boardList = " + boardList);
+		List<BoardBean> boardlist = dao.getList(startRow, endRow);
+		System.out.println("boardlist = " + boardlist);
 
 		// 총페이수
 		int pageCount = listcount/limit+((listcount%limit==0)?0:1);
@@ -44,11 +44,11 @@ public class BoardListAction implements Action{
 		// 공유 설정
 		request.setAttribute("page", page);
 		request.setAttribute("listcount", listcount);
-		request.setAttribute("boardList", boardList);
+		request.setAttribute("boardlist", boardlist);
 		request.setAttribute("pageCount", pageCount);
 		request.setAttribute("startPage", startPage);
 		request.setAttribute("endPage", endPage);
-		request.setAttribute("limit", limit);
+//		request.setAttribute("limit", limit);
 
 		// request 객체로 공유한 경우에는 dispatcher 방식으로 포워딩 되어야,
 		// view 페이지에서 공유한 값에 접근 할 수 있다.

@@ -7,9 +7,9 @@
    System.out.println("fileName="+fileName);
 
    String savePath = "boardupload";
-   ServletContext context = getServletContext();
+   ServletContext context = request.getServletContext();
    String sDownloadPath = context.getRealPath(savePath);
-   String sFilePath = sDownloadPath + "\\" + fileName;
+   String sFilePath = sDownloadPath + "/" + fileName;
    System.out.println("sFilePath="+sFilePath);
    
    // jsp에서 OutputStream 사용시 IllegalStateException 해결법 : 2줄 추가
@@ -22,7 +22,7 @@
 
    		FileInputStream in = new FileInputStream(sFilePath);
 
-   		String sMimeType = getServletContext().getMimeType(sFilePath);
+   		String sMimeType = request.getServletContext().getMimeType(sFilePath);
    		System.out.println("sMimeType>>>"+sMimeType );
 
    		// 다운로드 파일의 파일형식(마임타입) 설정
